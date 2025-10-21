@@ -169,15 +169,8 @@ function App() {
               <div className="status-dot"></div>
               API {systemStatus.api}
             </div>
-            <div className={`status-indicator ${systemStatus.rag}`}>
-              <div className="status-dot"></div>
-              RAG {systemStatus.rag}
-            </div>
             <button className="clear-btn" onClick={clearChat}>
               Clear Chat
-            </button>
-            <button className="test-btn" onClick={testConnection}>
-              Test Connection
             </button>
           </div>
         </div>
@@ -192,19 +185,6 @@ function App() {
               <p>
                 Your intelligent farming assistant for Ethiopian agriculture
               </p>
-
-              <div className="connection-info">
-                <p>
-                  <strong>Backend URL:</strong> {API_BASE_URL}
-                </p>
-                <button
-                  onClick={testConnection}
-                  className="test-connection-btn"
-                >
-                  Test Backend Connection
-                </button>
-              </div>
-
               <div className="quick-questions">
                 <h3>Quick Questions:</h3>
                 <div className="question-chips">
@@ -298,31 +278,7 @@ function App() {
 
       {/* Input Section */}
       <footer className="input-section">
-        <div className="input-controls">
-          <select
-            value={location}
-            onChange={(e) => setLocation(e.target.value)}
-            className="location-select"
-          >
-            <option value="Central Ethiopia">Central Ethiopia</option>
-            <option value="Amhara Region">Amhara Region</option>
-            <option value="Oromia Region">Oromia Region</option>
-            <option value="Southern Region">Southern Region</option>
-            <option value="Tigray Region">Tigray Region</option>
-          </select>
-
-          <select
-            value={cropType}
-            onChange={(e) => setCropType(e.target.value)}
-            className="crop-select"
-          >
-            <option value="maize">Maize</option>
-            <option value="teff">Teff</option>
-            <option value="wheat">Wheat</option>
-            <option value="barley">Barley</option>
-            <option value="sorghum">Sorghum</option>
-          </select>
-        </div>
+        <div className="input-controls"></div>
 
         <div className="input-container">
           <textarea
