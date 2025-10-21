@@ -165,10 +165,6 @@ function App() {
             <h1>Ethiopia Crop Advisor</h1>
           </div>
           <div className="status-indicators">
-            <div className={`status-indicator ${systemStatus.api}`}>
-              <div className="status-dot"></div>
-              API {systemStatus.api}
-            </div>
             <button className="clear-btn" onClick={clearChat}>
               Clear Chat
             </button>
