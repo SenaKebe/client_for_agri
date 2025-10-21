@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_BASE_URL = import.meta.env.VITE_API_URL;
+const API_BASE_URL = "https://d7c4fe4c0d35.ngrok-free.app/api/v1";
 
 function App() {
   const [messages, setMessages] = useState([]);
