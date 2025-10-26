@@ -9,7 +9,7 @@ import {
 import App from "./App";
 import "./AuthWrapper.css"; // Optional: Create this for styling
 
-const API_BASE_URL = "https://d7c4fe4c0d35.ngrok-free.app/api/v1";
+const API_BASE_URL = "https://f5ee02b8edb1.ngrok-free.app/api/v1";
 
 const AuthWrapper = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
