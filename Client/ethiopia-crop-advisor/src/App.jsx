@@ -2,14 +2,13 @@ import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_BASE_URL = "https://f5ee02b8edb1.ngrok-free.app/api/v1";
+const API_BASE_URL = "https://fa495a956f79.ngrok-free.app/api/v1";
 
 function App() {
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [location, setLocation] = useState("Central Ethiopia");
-  const [cropType, setCropType] = useState("maize");
   const [systemStatus, setSystemStatus] = useState({
     api: "checking",
     rag: "checking",

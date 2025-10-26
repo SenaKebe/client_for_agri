@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import LoginRegister from "./LoginRegister";
 
-const API_BASE_URL = "https://f5ee02b8edb1.ngrok-free.app/api/v1";
+const API_BASE_URL = "https://fa495a956f79.ngrok-free.app/api/v1";
 
 const AuthContext = React.createContext();
 

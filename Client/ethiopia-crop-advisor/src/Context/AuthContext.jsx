@@ -13,7 +13,7 @@ export const useAuth = () => {
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const API_BASE = "https://f5ee02b8edb1.ngrok-free.app/api/v1";
+  const API_BASE = "https://fa495a956f79.ngrok-free.app/api/v1";
 
   useEffect(() => {
     const token = localStorage.getItem("token");
