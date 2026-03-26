@@ -11,12 +11,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <AuthProvider>
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/login" element={<LoginRegister />} />
-        </Routes>
-      </AuthProvider>
+      {/* <AuthProvider> */}
+      <Routes>
+        <Route path="/" element={<App />} />
+        {/* <Route path="/login" element={<LoginRegister />} /> */}
+      </Routes>
+      {/* </AuthProvider> */}
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

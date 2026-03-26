@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_BASE_URL = "https://fa495a956f79.ngrok-free.app/api/v1";
+const API_BASE_URL = "https://93c7-196-188-252-215.ngrok-free.app/api/v1";
 
 function App() {
   const [messages, setMessages] = useState([]);
@@ -54,7 +54,7 @@ function App() {
       console.log("Sending message to API:", {
         message: inputMessage,
         location: location,
-        crop_type: cropType,
+        // crop_type: cropType,
       });
 
       const response = await axios.post(
@@ -62,14 +62,14 @@ function App() {
         {
           message: inputMessage,
           location: location,
-          crop_type: cropType,
+          // crop_type: cropType,
         },
         {
           timeout: 30000, // 30 second timeout
           headers: {
             "Content-Type": "application/json",
           },
-        }
+        },
       );
 
       console.log("API Response:", response.data);
@@ -192,7 +192,7 @@ function App() {
                         setTimeout(
                           () =>
                             document.getElementById("message-input")?.focus(),
-                          100
+                          100,
                         );
                       }}
                     >
@@ -213,8 +213,8 @@ function App() {
                       {message.type === "user"
                         ? "👤 You"
                         : message.type === "error"
-                        ? "❌ Error"
-                        : "🌱 Crop Advisor"}
+                          ? "❌ Error"
+                          : "🌱 Crop Advisor"}
                     </span>
                     <span className="message-time">{message.timestamp}</span>
                   </div>
